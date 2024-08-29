@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+
+        body {
+            background-color: #030303;
+        }
+
+        :root {
+            --gray : #808080;
+            --white : #ffffff;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+        }
+
+        .bg {
+            background-image: url(img/cover-homepage.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-block-size: 100vh;
+        }
+
+        .bg-color {
+            background-color: #0E0E0E;
+            min-block-size: 100vh;
+            margin: 8px 0;
+        }
+
+
+        header {
+            display: flex;
+            text-align: center;
+            background-color: rgba(15, 15, 15, 0.6);
+            justify-content:space-between ;
+            padding: 8px 40px;
+        }
+
+        header > img {
+            width: 56px;
+            height: 56px;
+        }
+
+        .content {
+            display: grid;
+            height: 100vh;
+            place-content: center;
+        }
+        
+        .box1 {
+            text-align: center;
+            color: #9D0B0E;
+            letter-spacing: 8px;
+            font-size: 32px;
+        }
+
+        .caption {
+            padding: 16px 0;
+            font-size: 16px;
+        }
+
+        .title {
+            padding: 106px 0;
+            
+        }
+
+        .topic {
+            color: #ffffff;
+            font-size: 32px;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+
+        .underline {
+            content: '';
+            background-color: #9D0B0E;
+            border-radius: 12px;
+            height: 4px;
+            width: 60px;
+            margin: 24px 0 0 0;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-box1 {
+            text-align: center;
+            padding: 100px;
+        }
+
+        .text-box2 {
+            align-items: center;
+            padding: 100px;
+        }
+
+        .gray { color: var(--gray);}
+        .white { color: var(--white);}
+        .ft-16 { font-size: 16px;}
+        .ft-24 { font-size: 24px;}
+
+        .grid {
+            display: grid;
+        }
+        
+        .grid-col-2 {
+            padding: 40px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .container-img {
+            text-align: center;
+        }
+
+        button {
+            color: #DBDBDB;
+            padding: 16px 24px;
+            border: 1px solid #3F3F3F;
+            background-color: #0E0E0E;
+            border-radius: 4px;
+        }
+
+        .position-button-center {
+            margin: 16px 0;
+            text-align: center;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #3F3F3F;
+        }
+
+        .line {
+            border: 1px solid #3F3F3F;
+            width: 80%;
+        }
+
+        .expand-box {
+            display: flex;
+            align-items: center;
+            background-color: #1C1C1C;
+        }
+
+        .gap-8 {
+            gap: 8px;
+        }
+
+        .px-40 {
+            padding: 0 40px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <img src="img/small-logo.png" alt="">
+            <img src="img/icon-menu.png" alt="">
+        </header>
+        <div class="content">
+            <div class="box1">
+                <img src="img/large-logo.png" alt="">
+                <p >PIZATE • FIRM</p>
+                <p class="caption">We are your solution</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-color">
+        <div class="title">
+            <p class="topic">Our services</p>
+            <div class="box">
+                <div class="underline"></div>
+            </div> 
+            <div class="grid grid-col-2">
+                <div class="container-img">
+                    <img src="img/img-1.png" alt="">
+                </div>
+                <div class="text-box1 grid">
+                    <p class="gray ft-16">Expert at resolving</p>
+                    <p class="white ft-24">Property Transaction in Phuket</p>
+                    <p class="gray ft-16">Our team of experts is ready to assist you with anything you need</p>
+                    <p class="white ft-24">LITIGATION</p>
+                    <p class="white ft-24">BUSINESS CONSULTANT</p>
+                    <p class="white ft-24">PROPERTY TRANSACTION</p>
+                    <p class="white ft-24">THAI RESIDENCY CONSULTANT</p>
+                    <p class="white ft-24">NOTARIAL SERVICES ATTORNEY</p>
+                </div>
+            </div>
+            <div class="position-button-center">
+                <button class="ft-16">Learn More</button>          
+            </div>
+        </div>
+    </div>
+    <div class="bg-color">
+        <div class="title">
+            <p class="topic">We have a wide range of experience working with clients</p>
+            <div class="box">
+                <div class="underline"></div>
+            </div>
+            <div class="grid grid-col-2">
+                <div class="text-box2 grid">
+                    <p class="white ft-24">Genaral Public</p>
+                    <div class="line"></div>
+                    <p class="white ft-24">Business Firm</p>
+                    <div class="line"></div>
+                    <p class="white ft-24">Organization</p>
+                </div>
+                <div class="container-img">
+                    <img src="img/img-1.png" alt="">
+                </div>
+            </div>
+            <div class="position-button-center">
+                <button class="ft-16">Learn More</button>          
+            </div>           
+        </div>
+    </div>
+    <div class="bg-color">
+        <div class="title">
+            <p class="topic">Our firm offer</p>
+            <div class="box">
+                <div class="underline"></div>
+            </div>           
+        </div>
+        <div class="grid gap-8 px-40">
+            <div class="expand-box">
+                <span class="white ft-24">High experience</span>
+                <img src="img/icon-expand.png" alt="">
+            </div>
+            <div class="expand-box">
+                <span class="white ft-24">Flexibility</span>
+                <img src="img/icon-expand.png" alt="">
+            </div>
+            <div class="expand-box">
+                <span class="white ft-24">Speed</span>
+                <img src="img/icon-expand.png" alt="">
+            </div>
+            <div class="expand-box">
+                <span class="white ft-24">Budget</span>
+                <img src="img/icon-expand.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="bg-color">
+        <div class="title">
+            <p class="topic">Legal Advice</p>
+            <div class="box">
+                <div class="underline"></div>
+            </div>           
+        </div>
+    </div>
+</body>
+</html>
